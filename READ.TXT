@@ -1,0 +1,22 @@
+1)Download The Project and unzip 
+2) Need to install php 7.4(version ) 
+3) Extract Project AND PUT THE PROJECT ON THE HTDOCS ON THE FOLDER
+4)edit the env file for send mail
+MAIL_MAILER=smtp
+MAIL_HOST=smtp.gmail.com
+MAIL_PORT=587
+MAIL_USERNAME=abc@gmail.com
+MAIL_PASSWORD="Your passowrd"
+MAIL_ENCRYPTION=tls
+MAIL_FROM_ADDRESS=abc@gmail.com
+MAIL_FROM_NAME="${APP_NAME}"
+You need to change mail configuration like mailer type and host name and port
+name username change
+5)open the cms run specfic cmd
+php artisan cache:clear
+php artisan cache:clear
+6) Open Project on the cmd line
+7) run the cron jobs and put the this cmd on the open project cmd
+php artisan schedule:run
+8) if need to the chanage email address on weather controller $email variable
+
